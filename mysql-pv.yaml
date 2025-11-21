@@ -5,7 +5,7 @@ apiVersion: v1
       labels:
         type: local
     spec:
-      storageClassName: manual
+      storageClassName: nfs-client
       capacity:
         storage: 1Gi
       accessModes:
