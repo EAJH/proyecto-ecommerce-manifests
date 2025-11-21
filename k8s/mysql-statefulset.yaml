@@ -47,12 +47,7 @@ spec:
       - name: db-init-scripts
         configMap:
           name: mysql-init-scripts
-  volumeClaimTemplates:
-  - metadata:
-      name: mysql-data
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      storageClassName: nfs-client
-      resources:
-        requests:
-          storage: 1Gi
+      - name: mysql-data
+        persistentVolumeClaim:
+          claimName: nfs-pvc
+  
