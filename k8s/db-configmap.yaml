@@ -5,9 +5,9 @@ metadata:
 data:
   01-schema.sql: |
     -- Permitimos que 'admin' se conecte desde cualquier IP del cluster
-    CREATE USER IF NOT EXISTS 'admin'@'%' IDENTIFIED BY 'admin';
-    GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
-    FLUSH PRIVILEGES;
+    --CREATE USER IF NOT EXISTS 'admin'@'%' IDENTIFIED BY 'admin';
+    --GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
+    --FLUSH PRIVILEGES;
     USE tsic2;
     DROP TABLE IF EXISTS Clientes; 
     CREATE TABLE Clientes (
