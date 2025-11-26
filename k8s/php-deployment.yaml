@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: php
-        image: docker.io/eajh954/tiendaropa:4142aac
+        image: docker.io/eajh954/tiendaropa:42b3035
         ports:
         - containerPort: 80
         env:
